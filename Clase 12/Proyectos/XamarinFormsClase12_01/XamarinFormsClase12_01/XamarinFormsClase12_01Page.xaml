@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:XamarinFormsClase12_01" 
+	x:Class="XamarinFormsClase12_01.XamarinFormsClase12_01Page"
+	xmlns:traduccion="clr-namespace:XamarinFormsClase12_01;assembly=XamarinFormsClase12_01"
+
+	>
+	<ContentPage.BindingContext>
+
+	      <local:ClockViewModel />
+	</ContentPage.BindingContext>
+	<StackLayout
+		VerticalOptions="Center"
+		>
+		<Label Text="{traduccion:TranslateExt Text=lblTime}">
+		</Label>
+		 <Label Text="{Binding DateTime,
+	                        StringFormat='{0:T}'}"
+	         FontSize="Large"
+	         HorizontalOptions="Center"
+	         VerticalOptions="Center">
+	  
+	  </Label>
+		<Button Text ="{traduccion:TranslateExt Text=btnSave}" Command="{Binding AlertTime}" x:Name="btnSave" ></Button>
+	</StackLayout>
+</ContentPage>

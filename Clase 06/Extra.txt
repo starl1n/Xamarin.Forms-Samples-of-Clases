@@ -1,0 +1,56 @@
+https://codeshare.io/5DoVq3
+//Instalar Google Play Service en el simulador
+http://www.teamandroid.com/gapps/
+
+//Como instalarlo en los emuladores
+https://university.xamarin.com/resources/how-to-install-google-play-on-android-emulator
+
+//Permisos para Android
+AccessCoarseLocation
+AccessFineLocation
+AccessLocationExtraCommands
+AccessMockLocation
+AccessNetworkState
+AccessWifiState
+Internet
+
+//Api key for android 
+AIzaSyCsf6R6vpynpDKCorR6SjsEfXxZRl7njos 
+
+///Agregar al app manifest
+
+	<meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBNOcv8pK3JobWJhDGyLZwVNUwJleCOCQs" />
+            
+            
+//Permisos para iOS
+<key>NSLocationAlwaysUsageDescription</key>
+    <string>Can we use your location</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+    <string>We are using your location</string>
+    
+  //Agregar en el AppDelegate.CS de Xamarin.iOs metodo Finishinglaunch
+    Xamarin.FormsMaps.Init();
+//Agregar en el MainActivity metodo onCreate
+
+Xamarin.FormsMaps.Init(this, bundle);//
+//Permisos para Android
+AccessCoarseLocation
+AccessFineLocation
+AccessLocationExtraCommands
+AccessMockLocation
+AccessNetworkState
+AccessWifiState
+Internet
+
+//Permisos para iOS
+<key>NSLocationAlwaysUsageDescription</key>
+    <string>Can we use your location</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+    <string>We are using your location</string>
+    
+  //Agregar en el AppDelegate.CS de Xamarin.iOs metodo Finishinglaunch
+    Xamarin.FormsMaps.Init();
+//Agregar en el MainActivity metodo onCreate
+
+Xamarin.FormsMaps.Init(this, bundle);

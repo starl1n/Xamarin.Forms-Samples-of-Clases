@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsWorkflow.SideBar"		
+
+	>
+	<ContentPage.Content>
+		<StackLayout x:Name="Contenedor">
+			<Image Source="Logo_CrediFactory.png" 
+			WidthRequest="100" HeightRequest="40"
+			x:Name="logo"></Image>
+			<ListView x:Name="Opciones"
+			BackgroundColor = "Transparent"
+				SeparatorVisibility = "None"
+			>
+
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

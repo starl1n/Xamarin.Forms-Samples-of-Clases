@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:XamarinFormsClase11" 
+	x:Class="XamarinFormsClase11.XamarinFormsClase11Page">
+	<StackLayout Padding="20,50,200,0">
+		<Label Text="Welcome to Xamarin Forms!" 
+		VerticalOptions="Center" 
+		HorizontalOptions="Center"
+		BindingContext="{x:Reference Name=slider}"
+		Rotation="{Binding Path=Value}"
+		Scale="{Binding Value}"
+		/>
+		 <Slider x:Name="slider"
+            Maximum="360"
+            VerticalOptions="CenterAndExpand" />
+		<Label Text="{Binding Value}"
+			BindingContext="{x:Reference slider}"
+		></Label>
+		<Label Text="{Binding Value, StringFormat='El angulo es {0} grados'}"
+			BindingContext="{x:Reference slider}"
+		></Label>
+	</StackLayout>
+</ContentPage>

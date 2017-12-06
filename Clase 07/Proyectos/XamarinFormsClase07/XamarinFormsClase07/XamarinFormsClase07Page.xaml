@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamarinFormsClase07" x:Class="XamarinFormsClase07.XamarinFormsClase07Page">
+	<ContentPage.Content>
+
+		<StackLayout Orientation = "Vertical"
+			VerticalOptions = "CenterAndExpand"
+			HorizontalOptions = "CenterAndExpand"
+			Padding = "50"
+			>
+			<Label FontSize = "Large" Text="Animaciones" HorizontalOptions="Center"/>
+			
+			<!-- Efecto FADE-->
+			<StackLayout Orientation= "Horizontal">
+				<Entry x:Name="txtFade" Text="Fade in/out"
+				BackgroundColor = "Navy" TextColor ="White"
+				></Entry>
+				<Button Text="Fade In" x:Name="btnFadeIn"/>
+				<Button Text="Fade Out" x:Name="btnFadeOut"/>
+			</StackLayout>
+
+				<!-- Efecto LayoutTo-->
+			<StackLayout Orientation= "Horizontal">
+				<Entry x:Name="txtLayout" Text="Layout To"
+				BackgroundColor = "Red" TextColor ="White"></Entry>
+				<Button Text="Layout To" x:Name="btnLayoutTo"/>
+			</StackLayout>
+
+
+				<!-- Efecto RotateTo-->
+			<StackLayout Orientation= "Horizontal" x:Name="ContainerRotator">
+				<Entry x:Name="txtRotate" Text="Rotate To"
+				BackgroundColor = "Purple" TextColor ="White"></Entry>
+				<Button Text="Rotate To" x:Name="btnRotateTo"/>
+				<Button Text="Rotate To Relativo" x:Name="btnRotateToRel"/>
+			</StackLayout>
+
+			
+			<Button BackgroundColor = "Black" Text="Animación combinada" 
+			TextColor="White" x:Name="btnAnimacionCombinada"></Button>
+			<Button BackgroundColor = "Yellow" Text="Animación Compuesta" 
+			TextColor="Black" x:Name="btnAnimacionCompuesta"></Button>
+			<Button BackgroundColor = "Silver" Text="Cancelar animaciones" 
+			TextColor="Black" x:Name="btnCancelAnimation"></Button>
+
+
+			<Button BackgroundColor = "Silver" Text="Animaciones personalizadas" 
+			TextColor="Fuchsia" x:Name="btnPersonalizadas"></Button>
+			<Image Source="UptoWork-CV-Form-4.PNG.png" x:Name="img">
+			</Image>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

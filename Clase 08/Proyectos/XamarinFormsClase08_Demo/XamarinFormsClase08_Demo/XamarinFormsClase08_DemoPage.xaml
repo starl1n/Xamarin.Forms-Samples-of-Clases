@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamarinFormsClase08_Demo" x:Class="XamarinFormsClase08_Demo.XamarinFormsClase08_DemoPage">
+	<StackLayout>
+		<Entry x:Name="texto" Placeholder="Introduzca un texto"></Entry>
+		<Button x:Name ="VerificarPosicion" Text = "Verificar Posicion"/>
+
+		<Button x:Name ="Hablar" Text = "Hablar"/>
+	</StackLayout>
+</ContentPage>

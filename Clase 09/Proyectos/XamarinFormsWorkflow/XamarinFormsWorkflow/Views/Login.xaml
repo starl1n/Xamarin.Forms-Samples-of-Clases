@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinFormsWorkflow.Login">
+	<ContentPage.Content>
+		<StackLayout Padding="50,0,50,0" VerticalOptions="CenterAndExpand">
+			<Label Text="BIENVENIDO AL WORKFLOW CREDIT FACTORY"
+		
+			HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
+			<Entry Placeholder="Usuario"></Entry>
+			<Entry Placeholder="Contraseña" IsPassword ="true"></Entry>
+			<StackLayout Orientation="Horizontal">
+				<Button Text ="Limpiar" HorizontalOptions="FillAndExpand" x:Name="btnLimpiar"></Button>
+				<Button Text ="Ingresar" BackgroundColor="Teal" TextColor="White" x:Name="btnIngresar"
+				HorizontalOptions="FillAndExpand"></Button>
+
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

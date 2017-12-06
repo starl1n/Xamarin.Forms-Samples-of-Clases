@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:XamarinFormsClase06" 
+	x:Class="XamarinFormsClase06.XamarinFormsClase06Page"
+	Title= "Hola"
+	>
+	<StackLayout
+		Orientation = "Vertical">
+		<StackLayout.Margin>50</StackLayout.Margin>
+	<Label Text="Hello, XAMgjhghghL!"
+       VerticalOptions="Center"
+       FontAttributes="Bold"
+			BackgroundColor = "Olive"
+       FontSize="Large" />
+		<Label >
+			<Label.Text>Hola, XAML!</Label.Text>
+			<Label.VerticalOptions > Center</Label.VerticalOptions>
+		</Label>	
+		<!-- GRID-->
+	<Grid
+	BackgroundColor= "Blue"
+			VerticalOptions= "FillAndExpand"
+			>
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+					<Label Grid.Row="0" BackgroundColor ="Green">
+					<Label.Text>Hola, XAML!</Label.Text>
+					<Label.VerticalOptions > Center</Label.VerticalOptions>
+			</Label>	
+
+			<Label Grid.Row="1">
+				<Label.Text>Hola, XAML!</Label.Text>
+			<Label.VerticalOptions > Center</Label.VerticalOptions>
+		</Label>
+		<Entry x:Name="CampoDeTexto"
+				Grid.Row="2"
+		Placeholder = "Digita aqui"
+			/>	
+	</Grid>
+	</StackLayout>
+
+
+	
+	 <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+</ContentPage>

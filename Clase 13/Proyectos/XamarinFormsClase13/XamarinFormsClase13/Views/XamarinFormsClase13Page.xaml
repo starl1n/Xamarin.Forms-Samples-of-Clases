@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:XamarinFormsClase13" 
+	x:Class="XamarinFormsClase13.XamarinFormsClase13Page">
+	<ContentPage.Resources>
+	   <ResourceDictionary>
+	      <local:ConverterBase64ImageSource x:Key="Base64ToImageConverter" />
+	   </ResourceDictionary>
+	</ContentPage.Resources>
+	<StackLayout
+
+		>
+		<Label Text = "Username"></Label>
+		<Entry x:Name="username" Text="tomas.olivo.cdc"></Entry>
+		<Label Text = "Password"></Label>
+		<Entry x:Name="password" IsPassword="true" Text ="123456"></Entry>
+		<Button Text ="Ingresar" x:Name="btnLogin"></Button>
+		<ListView x:Name="listado"
+			Margin="10,0,10,0"
+			>
+			<ListView.Header>
+				<Label Text="Expedientes" FontSize="Large"></Label>
+			</ListView.Header>
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="20"></RowDefinition>
+								<RowDefinition Height="20"></RowDefinition>
+							</Grid.RowDefinitions>
+
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition></ColumnDefinition>
+								<ColumnDefinition></ColumnDefinition>
+								<ColumnDefinition></ColumnDefinition>
+							</Grid.ColumnDefinitions>
+
+							<Image Grid.RowSpan = "2"  HeightRequest="40" 
+							 Source="{Binding Ent_B_Imagen1, Converter={StaticResource Base64ToImageConverter}}}" Grid.Row="0" Grid.Column="2"></Image>
+							<Label Text="{Binding Nombre_Completo}" Grid.Row="0" Grid.Column="0"></Label>
+							<Label Text="{Binding Ent_D_Documento}" Grid.Row="0" Grid.Column="1"></Label>
+
+							<Label Text="{Binding Exp_F_Expediente}" Grid.Row="1" Grid.Column="0"></Label>
+							<Label Text="{Binding Id_Expediente}" Grid.Row="1" Grid.Column="1"></Label>
+						</Grid>
+
+					</ViewCell>
+				</DataTemplate>
+			 </ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

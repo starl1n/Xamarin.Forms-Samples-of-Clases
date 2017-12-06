@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinFormsClase06.Formulario">
+	<ContentPage.Content>
+		<StackLayout x:Name="contenedor">
+			<StackLayout.Padding>50</StackLayout.Padding>
+			<!-- Este es el diseño del stack -->
+			<StackLayout.BackgroundColor>Yellow</StackLayout.BackgroundColor>
+			<Label TextColor="Black"
+			FontSize="Large"
+			>Lugar</Label>
+			<Label TextColor="Black">Nombre</Label>
+			<Entry x:Name="Nombre"></Entry>
+			<Label TextColor="Black">Dirección</Label>
+			<Entry x:Name="Direccion"></Entry>
+			<Label TextColor="Black">Latitude</Label>
+			<Entry x:Name="Latitude" ></Entry>
+			<Label TextColor="Black">Longitude</Label>
+			<Entry x:Name="Longitude" ></Entry>
+			<StackLayout Orientation="Horizontal">
+				<Button BackgroundColor = "Silver"
+				x:Name="btnCancelar"
+					TextColor="Black"
+				HorizontalOptions= "FillAndExpand"
+					>
+					<Button.Text>Cancelar</Button.Text>
+				</Button>
+				
+				<Button TextColor="White"
+				BackgroundColor="Black" 
+				Text="Guardar"
+				HorizontalOptions= "FillAndExpand"
+					x:Name="btnGuardar"
+
+				></Button>
+			</StackLayout>
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
